@@ -1,0 +1,28 @@
+﻿@using DAL;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <div>
+            <a href="/Contact/Create">Add Contact</a>
+        </div>
+
+        <ul>
+
+            @foreach (Contact contact in this.Model)
+            {
+                <li>
+                    @contact.Name
+                </li>
+            }
+        </ul>
+
+    </div>
+</body>
+</html>
