@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function g() {
+        }
+
+        function dump() {
+            console.log(this);
+
+            if (this == window) {
+                return;
+            }
+
+            dump();
+        }
+
+        var obj = {
+            dump: dump
+        };
+
+        obj.dump();
+
+        //obj.dump.apply(obj, []);
+
+    </script>
+</body>
+</html>

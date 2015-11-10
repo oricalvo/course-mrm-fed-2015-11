@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        window.x = 10;
+
+        console.log(x);
+
+        var originalSetTimeout = window.setTimeout;
+        window.setTimeout = function () {
+            //
+            //  Pre processing
+            //
+
+            originalSetTimeout();
+
+            //
+            //  Post processing
+            //
+        }
+
+        function doSomething() {
+            function g() {
+            }
+        }
+    </script>
+</body>
+</html>

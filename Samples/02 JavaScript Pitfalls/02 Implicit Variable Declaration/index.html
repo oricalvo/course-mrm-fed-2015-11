@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function g() {
+            x = 10;
+
+            for (i = 0; i < 10; i++) {
+                console.log("g");
+
+                h();
+            }
+        }
+
+        function h() {
+            for (i = 0; i < 10; i++) {
+                console.log("h");
+            }
+        }
+
+        g();
+
+        console.log(x);
+    </script>
+</body>
+</html>

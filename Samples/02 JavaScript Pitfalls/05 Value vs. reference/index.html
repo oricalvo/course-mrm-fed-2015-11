@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function run() {
+            var x = {
+                id: "12"
+            };
+
+            change(x);
+
+            console.log(x);
+        }
+
+        function change(x) {
+            x.id = "14";
+        }
+
+        function g() {
+            var x;
+
+            x = 10;
+            x = null;
+            x = true;
+            x = "abc";
+            x = undefined;
+
+            x = function () {
+            }
+            x = {
+            }
+        }
+    </script>
+</body>
+</html>

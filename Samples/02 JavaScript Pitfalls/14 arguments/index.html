@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        //function g() {
+        //    for (var i = 0; i < arguments.length; i++) {
+        //        console.log(arguments[i]);
+        //    }
+        //}
+
+        //g(1, 2, 3);
+
+        var original = window.setTimeout;
+
+        window.setTimeout = function (callback, interval) {
+            console.log("Before");
+
+            var clone = [];
+            for (var i = 0; i < arguments.length; i++) {
+                clone.push(arguments[i]);
+            }
+
+            clone[0] = function callbackWrapper () {
+                console.log("Before Event");
+
+                callback();
+
+                console.log("Before Event");
+            }
+
+            original.apply(this, clone);
+
+            console.log("After");
+        }
+
+        setTimeout(function () {
+            console.log("Running");
+        }, 1000);
+
+    </script>
+</body>
+</html>

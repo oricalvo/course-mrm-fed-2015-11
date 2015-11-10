@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        var res = typeof xxx;
+        console.log(typeof res);
+
+        var x;
+        console.log(typeof x);
+
+        function ensureJSON() {
+            if (window.JSON == undefined) {
+                window.JSON = {
+                };
+            }
+        }
+    </script>
+</body>
+</html>

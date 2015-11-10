@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        var counter = createCounter(10);
+
+        counter.inc();
+        counter.dec();
+
+        console.log(counter.get());
+
+        counter.val = 80;
+
+        console.log(counter.get() == 10);
+    </script>
+</body>
+</html>

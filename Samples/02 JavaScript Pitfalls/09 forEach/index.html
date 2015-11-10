@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        var arr = [1, 2, 3];
+
+        for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        arr.forEach(function (val, index) {
+            console.log(index + ": " + val);
+        });
+
+        var clone = arr.concat([]);
+    </script>
+</body>
+</html>
