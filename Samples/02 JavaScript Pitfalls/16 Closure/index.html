@@ -6,16 +6,31 @@
     <script>
         "use strict";
 
-        var counter = createCounter(10);
+        function Counter(val) {
+            var name;
+            var id;
 
-        counter.inc();
-        counter.dec();
+            return {
+                inc: function () {
+                    ++val;
+                },
+                dec: function () {
+                    --val;
+                },
+                get: function () {
+                    return val;
+                }
+            };
+        }
 
-        console.log(counter.get());
+        var c1 = new Counter(10);
 
-        counter.val = 80;
+        c1.val = 80;
 
-        console.log(counter.get() == 10);
+        var c2 = new Counter(20);
+
+        console.log(c1.get());
+        console.log(c2.get());
     </script>
 </body>
 </html>
