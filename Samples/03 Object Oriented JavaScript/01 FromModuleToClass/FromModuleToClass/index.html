@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script src="Counter.js"></script>
+    <script>
+        var c1 = Counter();
+        c1.inc();
+
+        var c2 = Counter();
+        c2.dec();
+
+        c1.dump();
+        c2.dump();
+
+        console.log(c1.inc == c2.inc);
+    </script>
+</body>
+</html>
