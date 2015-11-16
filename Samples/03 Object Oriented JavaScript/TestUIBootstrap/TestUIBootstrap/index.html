@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <button ng-click="showDP=!showDP">Toggle</button>
+
+        <div ng-show="showDP">
+            <a href="#" uib-tooltip="On the Left!">This is a link</a>
+            <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+            <uib-datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="ui-bootstrap-tpls.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
