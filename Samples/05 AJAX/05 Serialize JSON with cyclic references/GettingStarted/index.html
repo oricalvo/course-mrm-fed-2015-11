@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <button>Refresh</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        (function ($) {
+
+            function Contact(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+
+            MyClass.prototype.toJSON = function () {
+                return {
+                    name: this.name,
+                };
+            }
+
+            var obj1 = new MyClass();
+            var obj2 = new MyClass();
+
+            obj1.sibling = obj2;
+            obj2.sibling = obj1;
+
+            JSON.stringify(obj1);
+            
+        })(jQuery);
+    </script>
+</body>
+</html>

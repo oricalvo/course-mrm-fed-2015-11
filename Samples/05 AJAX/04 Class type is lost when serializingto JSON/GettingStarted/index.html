@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <button>Refresh</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        (function ($) {
+
+            function MyClass() {
+            }
+
+            var obj = new MyClass();
+            console.log(obj instanceof MyClass);
+
+            var clone = JSON.parse(JSON.stringify(obj));
+            console.log(clone instanceof MyClass);
+            
+        })(jQuery);
+    </script>
+</body>
+</html>

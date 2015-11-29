@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <button>Refresh</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        (function ($) {
+
+            $("button").click(function () {
+                reloadData();
+            });
+
+            function reloadData() {
+                $.ajax({
+                    type: "GET",
+                    url: "/template.json",
+                    success: function (contacts) {
+                        console.log(contacts.length);
+                    },
+                    error: function () {
+                        console.log("ERROR");
+                    },
+                    cache: false,
+                });
+            }
+
+            reloadData();
+            
+        })(jQuery);
+    </script>
+</body>
+</html>

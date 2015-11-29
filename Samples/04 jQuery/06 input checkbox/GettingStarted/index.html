@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <style>
+        .large {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" checked is-visible />
+
+    <script src="jquery.js"></script>
+    <script>
+        console.log($("input").attr("is-visible") !== undefined);
+    </script>
+</body>
+</html>

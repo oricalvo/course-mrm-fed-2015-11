@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form action="http://localhost:61661/contacts.json" method="post">
+        <button>Submit</button>
+    </form>
+
+    <script src="jquery.js"></script>
+    <script>
+
+        $.ajax({
+            url: "http://localhost:61661/contacts.json",
+            //dataType: "jsonp",
+            success: function(){
+                console.log("SUCCESS");
+            },
+            error: function(){
+                console.log("ERROR");
+            },
+            jsonpCallback: "F",
+        });
+
+        //var url = "http://localhost:61661/contacts.json";
+        //var script = $("<script src=\"" + url + "\" />");
+        //$("head").append(script);
+
+        //function F(data) {
+        //    console.log(data);
+        //}
+    </script>
+</body>
+</html>

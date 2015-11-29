@@ -11,7 +11,7 @@
         <button ng-click="showDP=!showDP">Toggle</button>
 
         <div ng-show="showDP">
-            <a href="#" uib-tooltip="On the Left!">This is a link</a>
+            <a href="#" tooltip="On the Left!" tooltip-append-to-body="true">This is a link</a>
             <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
 
             <uib-datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
@@ -19,7 +19,7 @@
     </div>
 
     <script src="angular.js"></script>
-    <script src="ui-bootstrap-tpls.js"></script>
+    <script src="https://cdn.panaya.com/libs/angular-bootstrap-ui/0.13.4/ui-bootstrap-tpls-0.13.4.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

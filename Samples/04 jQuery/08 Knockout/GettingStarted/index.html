@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <style>
+    </style>
+</head>
+<body>
+    <ul data-bind="foreach: contacts">
+        <li>
+            <span data-bind="text: name"></span>
+        </li>
+    </ul>
+
+    <script src="jquery.js"></script>
+    <script src="knockout.js"></script>
+    <script>
+        var viewModel = {
+            contacts: [
+                { id: 1, name: "Ori" },
+                { id: 2, name: "Roni" },
+                { id: 3, name: "Udi" },
+            ]
+        };
+
+        ko.applyBindings(viewModel, $("ul")[0]);
+    </script>
+</body>
+</html>
+
