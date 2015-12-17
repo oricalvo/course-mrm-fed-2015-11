@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <style>
+        [ng-cloak] {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <h1 ng-if="false">
+        Loading ...
+    </h1>
+
+    <div ng-controller="HomeCtrl">
+        <div>
+            <input ng-model="name" /><button ng-click="add()">Add</button>
+        </div>
+
+        <ul>
+            <li ng-cloak ng-repeat="contact in contacts">
+                <span>{{contact.id}}</span>
+                <span>{{contact.name}}</span>
+                <button ng-click="remove($index)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script>
+        var begin = new Date();
+        while (true) {
+            var now = new Date();
+            if (now - begin > 1000) {
+                break;
+            }
+        }
+    </script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>

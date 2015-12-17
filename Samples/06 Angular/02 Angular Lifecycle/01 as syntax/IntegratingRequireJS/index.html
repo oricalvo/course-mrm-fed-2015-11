@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div ng-controller="AppCtrl as ctrl">
+        <div ng-controller="ToolbarCtrl as ctrl">
+            {{ctrl.name}}
+
+            <button ng-click="ctrl.alert()">Alert</button>
+        </div>
+
+        <div ng-controller="ContentCtrl as ctrl">
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="Controllers.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="node_modules/angular-material/angular-material.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="HomeCtrl as ctrl">
+        <span>{{ctrl.name}}</span>
+
+        <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="app.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+!function(){function t(t,n){this.name="XXX",t.test="123"}t.$inject=["$scope","$http"],angular.module("MyApp").controller("HomeCtrl",t)}();
