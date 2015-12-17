@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <base href="/" />
+</head>
+<body>
+    <div ng-controller="HomeCtrl as ctrl">
+        {{ctrl.message}}
+        <button ng-click="ctrl.change()">Change</button>
+
+        <ul>
+            <li ng-repeat="num in ctrl.nums">
+                {{num}}
+            </li>
+        </ul>
+
+        <div>{{ctrl.nums.length}}</div>
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/angular.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/HomeCtrl.js"></script>
+</body>
+</html>
