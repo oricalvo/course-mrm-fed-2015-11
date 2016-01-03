@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div ng-controller="HomeCtrl as ctrl">
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <span>{{contact.name}}</span>
+                <span>{{contact.birthday | date}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/angular.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/ContactService.js"></script>
+    <script src="app/HomeCtrl.js"></script>
+</body>
+</html>

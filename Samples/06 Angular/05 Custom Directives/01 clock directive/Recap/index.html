@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="app/ClockComponent.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="HomeCtrl as ctrl">
+        <input ng-model="clockFormat" />
+        <clock format="clockFormat"></clock>
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/angular.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/ClockComponent.js"></script>
+    <script src="app/HomeCtrl.js"></script>
+</body>
+</html>
