@@ -1,0 +1,14 @@
+﻿<div>
+    <h1>Home</h1>
+
+    <ul>
+        <!--<li ng-repeat="contact in contacts" ng-click="select(contact)">-->
+        <li ng-repeat="contact in contacts">
+            <a ui-sref=".details({id: contact.id})">
+                <span>{{contact.name}}</span>
+            </a>
+        </li>
+    </ul>
+
+    <div ui-view></div>
+</div>
