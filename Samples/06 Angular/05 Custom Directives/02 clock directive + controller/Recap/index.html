@@ -10,7 +10,8 @@
     <div ng-controller="HomeCtrl as ctrl">
 
         <button ng-click="browse()">Browse</button>
-        <input type="file" style="display: none;" />
+        <input type="file" style="display: none;" ng-model="file" ng-change="fileSelected()" />
+        <button ng-click="log()">Log</button>
 
         <input ng-model="clockFormat" />
         <clock format="clockFormat"></clock>
