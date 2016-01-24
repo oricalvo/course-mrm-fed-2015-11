@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jasmine Spec Runner v2.4.1</title>
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.4.1/jasmine_favicon.png">
+    <link rel="stylesheet" href="lib/jasmine-2.4.1/jasmine.css">
+    <script src="lib/jasmine-2.4.1/jasmine.js"></script>
+    <script src="lib/jasmine-2.4.1/jasmine-html.js"></script>
+    <script src="lib/jasmine-2.4.1/boot.js"></script>
+
+    <script src="lib/system.src.js"></script>
+    <script>
+        System.config({
+            map: {
+                css: 'lib/system.css.js',
+                text: 'lib/system.text.js'
+            }
+        });
+
+        System.defaultJSExtensions = true;
+
+        System.import("tests").then(function () {
+            jasmine.getEnv().execute();
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

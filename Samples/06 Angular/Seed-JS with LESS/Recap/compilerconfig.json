@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "app/SiteMenu.css",
+    "inputFile": "app/SiteMenu.less"
+  },
+  {
+    "outputFile": "app/ContactList.css",
+    "inputFile": "app/ContactList.less"
+  }
+]

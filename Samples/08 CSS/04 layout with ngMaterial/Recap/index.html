@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="styles/angular-material.css" rel="stylesheet" />
+    <link href="styles/SiteMenu.css" rel="stylesheet" />
+</head>
+<body layout="row">
+
+    <site-menu></site-menu>
+
+    <app>
+        <bug-tracker></bug-tracker>
+        <notification-bar></notification-bar>
+    </app>
+
+
+    <div class="site-menu" hide show-gt-xs flex="20">
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                About
+            </li>
+        </ul>
+        <button>Click Me</button>
+    </div>
+
+    <div ng-controller="HomeCtrl as ctrl" flex layout="column">
+        <div flex="50">
+            {{ctrl.message}}
+        </div>
+
+        <div class="sub-menu" style="height: 5em; background-color: blue;">
+            Sub Menu
+        </div>
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-aria.js"></script>
+    <script src="lib/angular-animate.js"></script>
+    <script src="lib/angular-material.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/HomeCtrl.js"></script>
+</body>
+</html>

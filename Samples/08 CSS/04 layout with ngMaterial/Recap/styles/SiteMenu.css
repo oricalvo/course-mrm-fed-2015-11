@@ -1,0 +1,9 @@
+﻿site-menu {
+  background-color: red;
+}
+site-menu button {
+  margin: 1em;
+}
+site-menu ul li {
+  font-size: 1.25em;
+}

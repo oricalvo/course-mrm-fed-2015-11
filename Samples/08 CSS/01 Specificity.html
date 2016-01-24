@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            font-size: 24px;
+        }
+
+        button {
+            font-size: inherit;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid gray;
+            width: 20em;
+        }
+
+            ul li {
+                border-bottom: 1px solid gray;
+                padding: 1em;
+            }
+
+                ul li:last-child {
+                    border-bottom: none;
+                }
+
+                ul li:hover {
+                    background-color: lightblue;
+                }
+
+        div:before {
+            content: '';
+            display: inline-block;
+            width: 10em;
+            height: 1em;
+            background-color: red;
+        }
+
+        ul li:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+
+    <div></div>
+
+    <p>
+        <div>
+            Hello
+        </div>
+    </p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>

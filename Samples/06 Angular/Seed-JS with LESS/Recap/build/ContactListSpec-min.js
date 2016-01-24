@@ -1,0 +1,1 @@
+var ContactList=require("./ContactList");describe("ContactList",function(){it("fetches the contact list from the contact service",function(){window.module("MyApp");var t;inject(function(c){t=c});var c=[],n={getAll:function(){return c}},e=t.instantiate(ContactList,{$scope:{},contactService:n});expect(e.contacts).toEqual(c)})});

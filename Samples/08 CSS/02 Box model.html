@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .parent {
+            width: 20rem;
+            height: 20rem;
+            background-color: red;
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+        }
+
+        .child {
+            width: 10rem;
+            height: 20rem;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        .child1 {
+            background-color: blue;
+        }
+
+        .child2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="width: 2rem; height: 2rem; background-color: yellow; font-size: 10em;"></div>
+
+    <div class="parent">
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+    </div>
+</body>
+</html>
