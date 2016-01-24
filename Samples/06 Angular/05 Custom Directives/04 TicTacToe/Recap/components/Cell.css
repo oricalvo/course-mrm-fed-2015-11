@@ -1,0 +1,9 @@
+﻿cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    background-color: blue;
+    color: white;
+}

@@ -1,0 +1,7 @@
+﻿<table>
+    <tr ng-repeat="row in ctrl.board.rows">
+        <td ng-repeat="cell in row.cells" ng-click="ctrl.cellClicked(cell)">
+            <cell model="cell"></cell>
+        </td>
+    </tr>
+</table>
